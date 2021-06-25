@@ -1,0 +1,166 @@
+{
+	"siteVersion": "1.131.4",
+	"_meta": {
+		"sources": [
+			{
+				"json": "CracklingSpells",
+				"abbreviation": "CS",
+				"full": "Crackling Spells",
+				"url": "https://homebrewery.naturalcrit.com/print/1QMkFVcz71t9Fg_s31yU53dmE1fSdmPeiKlqBP6_kY9Kr?dialog=true",
+				"authors": [
+					"Raipe"
+				],
+				"convertedBy": [
+					"HotButterKnife"
+				]
+			}
+		],
+		"dateAdded": 1624632148,
+		"dateLastModified": 1624632148
+	},
+	"spell": [
+		{
+			"name": "Arc Lightning",
+			"source": "CracklingSpells",
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"Lightning springs forth from your fingertips in a 30-foot cone. Each creature caught within the area must make a Dexterity saving throw. A creature takes {@damage 3d6} lightning damage and if a creature fails the save by 5 or more it is also {@condition stunned} until the end of its next turn on a failed save. On a successful save, a creature takes half damage and isn't {@condition stunned}."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, it deals an additional {@scaledamage 3d6|3-9|1d6} lightning damage, additionally the {@condition stunned} condition save decreases by 1 to a maximum of your spellcasting DC for each slot level above 3rd."
+					]
+				}
+			],
+			"damageInflict": [
+				"lightning"
+			],
+			"conditionInflict": [
+				"stunned"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"N"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"eldritchInvocations": [
+				{
+					"name": "Kiss of Mephistopheles",
+					"source": "UAWarlockAndWizard"
+				}
+			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Fulgurous Step",
+			"source": "CracklingSpells",
+			"level": 3,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "line",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You channel lightning into your whole body momentarily turning yourself into an incorporeal beam of magic launching yourself forward. You move in a straight 10 ft. wide line, up to a point within 60 ft. of your location. Each creature in the line must make a Constitution saving throw taking 2d4 Lightning damage and 2d4 Thunder damage and be {@condition deafened} until the end of their next round; on a success, they take half the damage and are not {@condition deafened}.",
+				"Attacks of Opportunity have disadvantage on you while you make this movement."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the Lightning damage and Thunder damage increases by 1d4 and the distance you can travel is increased by 20 feet for each slot level above 4th."
+					]
+				}
+			],
+			"damageInflict": [
+				"lightning",
+				"thunder"
+			],
+			"conditionInflict": [
+				"deafened"
+			],
+			"spellAttack": [
+				"O"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"L"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"eldritchInvocations": [
+				{
+					"name": "Kiss of Mephistopheles",
+					"source": "UAWarlockAndWizard"
+				}
+			],
+			"hasFluffImages": true
+		}
+	]
+}
