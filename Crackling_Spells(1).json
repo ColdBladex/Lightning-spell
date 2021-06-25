@@ -1,0 +1,396 @@
+{
+	"siteVersion": "1.131.4",
+	"_meta": {
+		"sources": [
+			{
+				"json": "CracklingSpells",
+				"abbreviation": "CS",
+				"full": "Crackling Spells",
+				"url": "https://homebrewery.naturalcrit.com/print/1QMkFVcz71t9Fg_s31yU53dmE1fSdmPeiKlqBP6_kY9Kr?dialog=true",
+				"authors": [
+					"Raipe"
+				],
+				"convertedBy": [
+					"HotButterKnife"
+				]
+			}
+		],
+		"dateAdded": 1624633748,
+		"dateLastModified": 1624633748
+	},
+	"spell": [
+		{
+			"name": "Arc Lightning",
+			"source": "CracklingSpells",
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"Lightning springs forth from your fingertips in a 30-foot cone. Each creature caught within the area must make a Dexterity saving throw. A creature takes {@damage 3d6} lightning damage and if a creature fails the save by 5 or more it is also {@condition stunned} until the end of its next turn on a failed save. On a successful save, a creature takes half damage and isn't {@condition stunned}."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, it deals an additional {@scaledamage 3d6|3-9|1d6} lightning damage, additionally the {@condition stunned} condition save decreases by 1 to a maximum of your spellcasting DC for each slot level above 3rd."
+					]
+				}
+			],
+			"damageInflict": [
+				"lightning"
+			],
+			"conditionInflict": [
+				"stunned"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"N"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"eldritchInvocations": [
+				{
+					"name": "Kiss of Mephistopheles",
+					"source": "UAWarlockAndWizard"
+				}
+			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Mort'dela Blade Flash",
+			"source": "CracklingSpells",
+			"level": 4,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a simple or a martial weapon made of conductive material you're currently holding"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You weave between your enemies in a flash of lightning, striking every foe you pass.",
+				"Once you cast the spell choose any number of creatures in a 30 foot cone originating from you. You then make a melee weapon attack against each chosen creature in the cone, on a hit the target suffers the attack's normal effects, and takes an additional 2d8 lightning damage.",
+				"You cannot hit each creature more than once."
+			],
+			"damageInflict": [
+				"lightning"
+			],
+			"spellAttack": [
+				"M"
+			],
+			"areaTags": [
+				"N"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"eldritchInvocations": [
+				{
+					"name": "Kiss of Mephistopheles",
+					"source": "UAWarlockAndWizard"
+				}
+			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Fulgurous Step",
+			"source": "CracklingSpells",
+			"level": 3,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "line",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You channel lightning into your whole body momentarily turning yourself into an incorporeal beam of magic launching yourself forward. You move in a straight 10 ft. wide line, up to a point within 60 ft. of your location. Each creature in the line must make a Constitution saving throw taking 2d4 Lightning damage and 2d4 Thunder damage and be {@condition deafened} until the end of their next round; on a success, they take half the damage and are not {@condition deafened}.",
+				"Attacks of Opportunity have disadvantage on you while you make this movement."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the Lightning damage and Thunder damage increases by 1d4 and the distance you can travel is increased by 20 feet for each slot level above 4th."
+					]
+				}
+			],
+			"damageInflict": [
+				"lightning",
+				"thunder"
+			],
+			"conditionInflict": [
+				"deafened"
+			],
+			"spellAttack": [
+				"O"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"L"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Thunderstruck",
+			"source": "CracklingSpells",
+			"level": 5,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 150
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "an object made of metal"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You raise two fingers to the heavens and, in an instant, a thunderous bolt of lightning flashes down from the sky and strikes down your foe.",
+				"Target one creature within range. The target must be open to the sky, and cannot be indoors. The target must succeed on a Dexterity saving throw or take 5d10 Lightning damage and be {@condition stunned} until the start of their next turn.",
+				"Hit or miss, the target and each creature in a 15ft radius must make a Constitution saving throw as the strike emits a thunderous boom audible out to 300 feet, taking 4d6 thunder damage on a failed save, or half as much damage on a successful one."
+			],
+			"damageInflict": [
+				"lightning",
+				"thunder"
+			],
+			"conditionInflict": [
+				"stunned"
+			],
+			"savingThrow": [
+				"dexterity",
+				"constitution"
+			],
+			"areaTags": [
+				"ST",
+				"R"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Earth Shatter",
+			"source": "CracklingSpells",
+			"level": 6,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "must be cast during a thunderstorm or in similar conditions"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You summon a massive lightning bolt to empower your weapon before striking the ground at your feet. All creatures in a 60 cone from you must make a Strength saving throw or take 5d6 force and 5d6 thunder damage and be knocked {@condition prone}. Objects and buildings take double damage from this spell."
+			],
+			"damageInflict": [
+				"force",
+				"thunder"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"areaTags": [
+				"N"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Conjure Denizen of the Dawn",
+			"source": "CracklingSpells",
+			"level": 2,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You create a rift to the Plane of Irian the Eternal Dawn and warriors of the light, Lumi march through the portal to aid you to fight against the forces of darkness or known deceivers. The Lumi uses the stat block below. When you cast the spell choose either Warrior or Healer for each Lumi you conjure, which determines certain traits in its stat block.",
+				"The Lumi are friendly to you and your companions for the duration. Roll initiative for them, each of them act on the same turn. They obey any verbal commands that you issue to them (no action required by you), as long as they don't violate their alignment, ideals or cause. If you don't issue any commands to the Lumi, it defends itself from hostile creatures, focuses on fighting against the forces of darkness, or healing and aiding those in need that share their ideals.",
+				"If your Concentration is broken or if a Lumi drops to 0 hitpoints they return back to their home plane."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, you summon an additional Lumi for every two slot levels above 2nd"
+					]
+				}
+			],
+			"miscTags": [
+				"SMN"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			}
+		}
+	]
+}
