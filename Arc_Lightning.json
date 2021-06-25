@@ -50,9 +50,6 @@
 	"damageInflict": [
 		"lightning"
 	],
-	"spellAttack": [
-		"O"
-	],
 	"savingThrow": [
 		"dexterity"
 	],
