@@ -1,5 +1,7 @@
 {
-	"name": "Arc Lightning",
+	"name": "Fireball1",
+	"source": "CracklingSpells",
+	"page": 241,
 	"level": 3,
 	"school": "V",
 	"time": [
@@ -9,54 +11,164 @@
 		}
 	],
 	"range": {
-		"type": "cone",
+		"type": "point",
 		"distance": {
 			"type": "feet",
-			"amount": 30
+			"amount": 150
 		}
+	},
+	"components": {
+		"v": true,
+		"s": true,
+		"m": "a tiny ball of bat guano and sulfur"
 	},
 	"duration": [
 		{
 			"type": "instant"
 		}
 	],
-	"classes": {
-		"fromClassList": [
-			{
-				"name": "Wizard",
-				"source": "PHB"
-			}
-		]
-	},
 	"entries": [
-		"Lightning springs forth from your fingertips in a 30-foot cone. Each creature caught within the area must make a Dexterity saving throw. A creature takes {@damage 3d6} lightning damage and if a creature fails the save by 5 or more it is also {@condition stunned} until the end of its next turn on a failed save. On a successful save, a creature takes half damage and isn't {@condition stunned}."
-	],
-	"source": "CracklingSpells",
-	"components": {
-		"v": true,
-		"s": true
-	},
-	"conditionInflict": [
-		"stunned"
+		"A bright streak flashes from your pointing finger to a point you choose within range and then blossoms with a low roar into an explosion of flame. Each creature in a 20-foot-radius sphere centered on that point must make a Dexterity saving throw. A target takes {@damage 8d6} fire damage on a failed save, or half as much damage on a successful one.",
+		"The fire spreads around corners. It ignites flammable objects in the area that aren't being worn or carried."
 	],
 	"entriesHigherLevel": [
 		{
+			"type": "entries",
 			"name": "At Higher Levels",
 			"entries": [
-				"When you cast this spell using a spell slot of 4th level or higher, it deals an additional {@scaledamage 3d6|3-9|1d6} lightning damage, additionally the {@condition stunned} condition save decreases by 1 to a maximum of your spellcasting DC for each slot level above 3rd."
+				"When you cast this spell using a spell slot of 4th level or higher, the damage increases by {@scaledamage 8d6|3-9|1d6} for each slot level above 3rd."
 			]
 		}
 	],
 	"damageInflict": [
-		"lightning"
+		"fire"
 	],
 	"savingThrow": [
 		"dexterity"
 	],
 	"areaTags": [
-		"N"
+		"S"
 	],
-	"miscTags": [
-		"SCL"
-	]
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Sorcerer",
+				"source": "PHB"
+			},
+			{
+				"name": "Wizard",
+				"source": "PHB"
+			}
+		],
+		"fromSubclass": [
+			{
+				"class": {
+					"name": "Cleric",
+					"source": "PHB"
+				},
+				"subclass": {
+					"name": "Light",
+					"source": "PHB"
+				}
+			},
+			{
+				"class": {
+					"name": "Warlock",
+					"source": "PHB"
+				},
+				"subclass": {
+					"name": "Fiend",
+					"source": "PHB"
+				}
+			},
+			{
+				"class": {
+					"name": "Cleric",
+					"source": "PHB"
+				},
+				"subclass": {
+					"name": "Zeal (PSA)",
+					"source": "PSA"
+				}
+			},
+			{
+				"class": {
+					"name": "Artificer (Revisited)",
+					"source": "UAArtificerRevisited"
+				},
+				"subclass": {
+					"name": "Artillerist",
+					"source": "UAArtificerRevisited"
+				}
+			},
+			{
+				"class": {
+					"name": "Druid",
+					"source": "PHB"
+				},
+				"subclass": {
+					"name": "Wildfire (UA)",
+					"source": "UAClericDruidWizard"
+				}
+			},
+			{
+				"class": {
+					"name": "Artificer",
+					"source": "TCE"
+				},
+				"subclass": {
+					"name": "Artillerist",
+					"source": "TCE"
+				}
+			},
+			{
+				"class": {
+					"name": "Warlock",
+					"source": "PHB"
+				},
+				"subclass": {
+					"name": "Genie (UA)",
+					"source": "UA2020SubclassesRevisited",
+					"subSubclass": "Efreeti"
+				}
+			},
+			{
+				"class": {
+					"name": "Warlock",
+					"source": "PHB"
+				},
+				"subclass": {
+					"name": "Genie",
+					"source": "TCE"
+				}
+			},
+			{
+				"class": {
+					"name": "Warlock",
+					"source": "PHB"
+				},
+				"subclass": {
+					"name": "Genie (UA)",
+					"source": "UA2020SubclassesRevisited"
+				}
+			},
+			{
+				"class": {
+					"name": "Monk",
+					"source": "PHB"
+				},
+				"subclass": {
+					"name": "Four Elements",
+					"source": "PHB"
+				}
+			}
+		]
+	},
+	"eldritchInvocations": [
+		{
+			"name": "Kiss of Mephistopheles",
+			"source": "UAWarlockAndWizard"
+		}
+	],
+	"hasFluffImages": true
 }
