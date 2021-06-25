@@ -1,0 +1,12 @@
+{
+	"fileType": "spells-sublist",
+	"siteVersion": "1.131.4",
+	"items": [
+		{
+			"h": "fireball_phb"
+		}
+	],
+	"sources": [
+		"PHB"
+	]
+}
